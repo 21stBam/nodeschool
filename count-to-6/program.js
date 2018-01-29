@@ -9,10 +9,15 @@
 //                    .reduce( (x, y) => x + y);
 //console.log(`[${inputs}] becomes "${results}"`);
 
-var foot = {
-    kick: function () {
-        this.yelp = "Ouch!";
-        setImmediate(() => console.log(this.yelp));
-    }
-};
-foot.kick();
+//var foot = {
+//    kick: function () {
+//        this.yelp = "Ouch!";
+//        setImmediate(() => console.log(this.yelp));
+//    }
+//};
+//foot.kick();
+
+let userArray = process.argv.slice(2);
+let result = {};
+[, result.username, result.email] = userArray;
+console.log(result);
