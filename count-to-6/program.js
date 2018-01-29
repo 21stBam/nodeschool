@@ -17,7 +17,11 @@
 //};
 //foot.kick();
 
-let userArray = process.argv.slice(2);
-let result = {};
-[, result.username, result.email] = userArray;
-console.log(result);
+//let userArray = process.argv.slice(2);
+//let result = {};
+//[, result.username, result.email] = userArray;
+//console.log(result);
+
+let args = process.argv.slice(2);
+let min = Math.min(...args);
+console.log(`The minimum of [${args}] is ${min}`);
